@@ -21,7 +21,7 @@ public class Main {
 			}
 		}
 		
-		int maxNum =0;
+		int maxNum = 0;
 		
 		for (int col = 0; col < arr.length; col++) {
 			for (int row = 0; row < arr[col].length; row++) {
