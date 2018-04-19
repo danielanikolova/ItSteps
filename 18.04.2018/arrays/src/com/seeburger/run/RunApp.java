@@ -24,14 +24,14 @@ public class RunApp {
 //		FileManipulation.findFiles();
 		
 		
-//		int n = scanner.nextInt();
-//		
-//		int [] arr = new int [n];
-//		
-//		for (int i = 0; i < arr.length; i++) 
-//		{
-//			arr[i] = random.nextInt(100)+1;
-//		}
+		int n = scanner.nextInt();
+		
+		int [] arr = new int [n];
+		
+		for (int i = 0; i < arr.length; i++) 
+		{
+			arr[i] = random.nextInt(100)+1;
+		}
 		
 		
 		/*
