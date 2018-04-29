@@ -12,6 +12,11 @@ import java.util.LinkedList;
 import java.util.Map;
 import java.util.TreeMap;
 
+
+/*
+ * This class creates and fills collections based on given command
+ */
+
 public class CommandExecutor {
 
 	private BufferedReader br;
@@ -23,6 +28,7 @@ public class CommandExecutor {
 	}
 	
 
+	// this method returns collection
 	public Collection<Student> fillCollectionFrom(int choise) throws IOException{
 	
 			String line = br.readLine();
@@ -69,8 +75,9 @@ public class CommandExecutor {
 			
 	}
 
-
-	public Map<Integer, Student> fillMapFromFile(int choise) throws IOException {
+// This method returns map
+	public Map<Integer, Student> fillMapFromFile(int choise) throws IOException 
+	{
 		String line = br.readLine();
 		line = br.readLine();
 		Student student;
