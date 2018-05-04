@@ -72,14 +72,12 @@ public class Graph {
 		Queue<Integer> toVisit = new ArrayDeque<>();
 		toVisit.addAll(adjacencyList.get(gate));
 		
-		while (toVisit!=null) {
+		while (!toVisit.isEmpty()) {
 		
 				if (!resutList.contains(toVisit.peek())) {
-					if (!toVisit.isEmpty()) {
-						getChildren(resutList, toVisit.peek());
-					}
 					
-					
+					getChildren(resutList, toVisit.poll());
+				
 				}else {
 					toVisit.poll();
 				}
