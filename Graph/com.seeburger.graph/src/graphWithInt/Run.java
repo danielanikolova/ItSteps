@@ -6,11 +6,12 @@ import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
+import javax.xml.bind.JAXBException;
 
 
 public class Run {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException, JAXBException {
 		
 		
 		BufferedReader br = new BufferedReader(new FileReader("verteces.txt"));
@@ -45,6 +46,8 @@ public class Run {
 //		myGraph.BFSTraverse(7);
 		
 //		System.out.println(myGraph.mapInfo());
+		
+	
 		
 		System.out.println();
 

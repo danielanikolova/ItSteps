@@ -8,9 +8,19 @@ import java.util.List;
 import java.util.Map;
 import java.util.Queue;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement(name = "graph")
+@XmlAccessorType (XmlAccessType.FIELD)
 public class Graph {
 	
+	
+	@XmlElement(name = "adjacencyList")
 	private Map<Integer, List<Integer>> adjacencyList;
+	@XmlElement(name = "verteces")
 	private List<Integer> verteces;
 	
 	public Graph() {
