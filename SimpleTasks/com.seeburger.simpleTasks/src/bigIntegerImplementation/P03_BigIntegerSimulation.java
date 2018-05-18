@@ -20,22 +20,16 @@ public class P03_BigIntegerSimulation {
 	public static void main(String[] args) {
 		
 			Scanner scanner = new Scanner(System.in);
-	        StringBuilder sb = new StringBuilder();
+	        String result = null;
 
 	        String firstNum = scanner.nextLine();
 	        String secondNum = scanner.nextLine();
 	        
-	        String resultSum = BigIntegerImplementation.sumBigNumbers(firstNum, secondNum);
-	        String result2 = BigIntegerImplementation.subtractNumbers(firstNum, secondNum);
 	        
-//	        System.out.println(resultSum);
-	        System.out.println(result2);
+	//        result = MyBigInteger.sumBigNumbers(firstNum, secondNum);
+	        result = MyBigInteger.subtractBigNumbers(firstNum, secondNum);
 	        
-//	      BigInteger result = new BigInteger("-2");
-//	      
-//	      BigInteger r = result.subtract(BigInteger.valueOf(2));
-//	      
-//	      System.out.println(r);
+	        System.out.println(result);
 	        
 	}
 

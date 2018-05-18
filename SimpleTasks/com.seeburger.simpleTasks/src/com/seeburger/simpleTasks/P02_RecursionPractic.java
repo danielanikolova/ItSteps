@@ -18,8 +18,6 @@ public class P02_RecursionPractic {
 		int firstNum = 10;
 		int lastNum = 10000;
 		
-		int current = 10;
-		
 		printNextIncreasing(firstNum, lastNum);
 		printNextDecreasing(lastNum, firstNum);
 

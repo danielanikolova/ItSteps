@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 /**
  * 
- * P04_matrixMatrix represents matrix matrix
+ * P04_matrixMatrix represents matrix
  *
  */
 
@@ -36,6 +36,8 @@ public class P04_matrixMatrix {
 	         
 	        int maxRow = n-1;
 	         
+	        
+	        
 	        while (value <= n*n)
 	        {
 	        	 for (int i = minRow; i <= maxRow; i++) 
@@ -75,6 +77,8 @@ public class P04_matrixMatrix {
 	            maxRow--;
 	        }
 	         
+	        
+	        // here we print the matrix
 	        for (int i = 0; i < matrix.length; i++)
 	        {
 	            for (int j = 0; j < matrix.length; j++)

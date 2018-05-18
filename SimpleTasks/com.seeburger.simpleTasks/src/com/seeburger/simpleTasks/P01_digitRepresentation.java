@@ -22,7 +22,7 @@ import java.util.Deque;
  *
  */
 
-public class P01_tigitRepresentation {
+public class P01_digitRepresentation {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		
