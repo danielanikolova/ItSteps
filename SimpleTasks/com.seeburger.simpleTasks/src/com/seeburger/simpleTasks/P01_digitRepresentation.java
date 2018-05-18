@@ -34,7 +34,8 @@ public class P01_digitRepresentation {
 		
 		Deque<Integer> digits = new ArrayDeque<>();
 		
-		while (true) {
+		while (true) 
+		{
 			
 			currentDigit = num % 10;
 			
@@ -42,20 +43,19 @@ public class P01_digitRepresentation {
 			
 			num = num/10;
 			
-			if (num/10==0) {
+			if (num/10==0) 
+			{
 				digits.push(num);
 				break;
 			}
 			
 		}
 		
-		while (!digits.isEmpty()) {
+		while (!digits.isEmpty()) 
+		{
 			System.out.print(digits.pop() + " ");
 		}
-		
-		
-		
-		
+				
 
 	}
 

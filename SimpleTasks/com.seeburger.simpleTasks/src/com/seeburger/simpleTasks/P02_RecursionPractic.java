@@ -23,9 +23,11 @@ public class P02_RecursionPractic {
 
 	}
 
+	
 	private static void printNextDecreasing(int firstNum, int lastNum) {
 		
-		if (firstNum == lastNum) {
+		if (firstNum == lastNum) 
+		{
 			System.out.print(firstNum + " ");	
 			return;
 		}
@@ -35,9 +37,11 @@ public class P02_RecursionPractic {
 		
 	}
 
-	private static void printNextIncreasing(int lastNum, int firstNum) {
+	private static void printNextIncreasing(int lastNum, int firstNum) 
+	{
 		
-		if (lastNum ==  firstNum) {
+		if (lastNum ==  firstNum) 
+		{
 			System.out.print(firstNum + " ");	
 			return;
 		}
