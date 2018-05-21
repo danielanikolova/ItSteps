@@ -37,7 +37,7 @@ public class MyBigInteger {
 			}
 			else 
 			{
-				result = "-" + subtract(firstNum, secondNum.substring(1, secondNum.length()));
+				result = subtract(firstNum, secondNum.substring(1, secondNum.length()));
 			}
 		}
 		else 
@@ -48,6 +48,7 @@ public class MyBigInteger {
 			}
 			else 
 			{
+				
 				result = "-" + sum(firstNum.substring(1, firstNum.length()), secondNum.substring(1, secondNum.length()));
 			}
 		}
@@ -66,40 +67,47 @@ public class MyBigInteger {
 		String secondNum = mySecondNum.getBigNum();
 		
 		String result = null;
+		int  chekBigger  = findTheBiggerNum(firstNum, secondNum);
 		
 		if (firstNum.equalsIgnoreCase(secondNum)) 
 		{
 			return "0";
 		}		
 		
-		if (findTheBiggerNum(firstNum, secondNum) == 1) 
-		{
-			String temp = firstNum;
-			firstNum = secondNum;
-			secondNum = temp;
-					
-		}
 		
 		if (firstNum.charAt(0) != '-') 
 		{
 			if (secondNum.charAt(0) != '-') 
 			{
-				result = subtract (firstNum, secondNum);
+				if (chekBigger == 1) {
+					result = "-" + subtract(secondNum, firstNum);
+				}else {
+					result = subtract(firstNum, secondNum);
+				}
+								
 			}
 			else
 			{
-				result = sum (firstNum, secondNum.substring(1, secondNum.length()));
+				result = sum(secondNum.substring(1, secondNum.length()), firstNum);
+				
 			}
 		}
 		else 
 		{
 			if (secondNum.charAt(0) != '-') 
 			{
-				result = "-" + sum(firstNum.substring(1, firstNum.length()), secondNum);
+				result = "-" + sum(secondNum, firstNum.substring(1, firstNum.length()));
 			}
 			else 
 			{
-				result = "-" + subtract(firstNum.substring(1, firstNum.length()), secondNum.substring(1, secondNum.length()));
+
+				if (chekBigger == 1) {
+					result = subtract(secondNum.substring(1, secondNum.length()), firstNum.substring(1, firstNum.length()));
+				}else {
+					result = "-" + subtract(firstNum.substring(1, firstNum.length()), secondNum.substring(1, secondNum.length()));
+				}
+				
+				
 			}
 		}
 		
@@ -112,7 +120,7 @@ public class MyBigInteger {
 	{
 		if (firtsNum.charAt(0) == '-') 
 		{
-			firtsNum = firtsNum.substring(1, firtsNum.length()-1);
+			firtsNum = firtsNum.substring(1, firtsNum.length());
 		}
 		
 		if (secNum.charAt(0) == '-') 
