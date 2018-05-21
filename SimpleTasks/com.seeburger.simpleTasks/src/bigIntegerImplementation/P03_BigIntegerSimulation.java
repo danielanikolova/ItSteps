@@ -24,9 +24,12 @@ public class P03_BigIntegerSimulation {
 	        String firstNum = scanner.nextLine();
 	        String secondNum = scanner.nextLine();
 	        
+	        MyBigInteger myFirstInteger = new MyBigInteger(firstNum);
+	        MyBigInteger mySecondInteger = new MyBigInteger(secondNum); 
 	        
-	//        result = MyBigInteger.sumBigNumbers(firstNum, secondNum);
-	        result = MyBigInteger.subtractBigNumbers(firstNum, secondNum);
+	        
+//	        result = myFirstInteger.sumBigNumbers(mySecondInteger);
+	        result = myFirstInteger.subtractBigNumbers(mySecondInteger);
 	        
 	        System.out.println(result);
 	        
