@@ -1,5 +1,6 @@
 package bigIntegerImplementation;
 
+
 public class MyBigInteger {
 	
 	
@@ -88,7 +89,12 @@ public class MyBigInteger {
 			}
 			else
 			{
+			    if (chekBigger == 1) {
 				result = sum(secondNum.substring(1, secondNum.length()), firstNum);
+			    }else {
+				result = sum( firstNum, secondNum.substring(1, secondNum.length()));
+			    }
+				
 				
 			}
 		}
@@ -96,22 +102,27 @@ public class MyBigInteger {
 		{
 			if (secondNum.charAt(0) != '-') 
 			{
-				result = "-" + sum(secondNum, firstNum.substring(1, firstNum.length()));
+			    if (chekBigger == 1) {
+				result = "-" + sum( secondNum, firstNum.substring(1, firstNum.length()) );
+			    }else {
+				result = "-" + sum(firstNum.substring(1, firstNum.length()), secondNum );
+			    }
+				
+				
 			}
 			else 
 			{
-
 				if (chekBigger == 1) {
 					result = subtract(secondNum.substring(1, secondNum.length()), firstNum.substring(1, firstNum.length()));
 				}else {
-					result = "-" + subtract(firstNum.substring(1, firstNum.length()), secondNum.substring(1, secondNum.length()));
+					result =  "-" + subtract(firstNum.substring(1, firstNum.length()), secondNum.substring(1, secondNum.length()));
 				}
 				
 				
 			}
 		}
 		
-		
+	
 		return result;
 		
 	}
@@ -236,12 +247,10 @@ public class MyBigInteger {
 			
         		if (i >= secondNum.length())
         		{
-	               first = Integer.parseInt(String.valueOf(firstNum.charAt(firstNum.length()-1-i)));
-	               sb.append(String.valueOf(first - toRemember));
-	               toRemember = 0;
-	               continue;
+        	               first = Integer.parseInt(String.valueOf(firstNum.charAt(firstNum.length()-1-i)));
+        	               second = 0;
 	              
-	           }
+        		}
         		else 
         		{
 	               second = Integer.parseInt(String.valueOf(secondNum.charAt(secondNum.length()-1-i)));

@@ -18,7 +18,7 @@ public class P03_BigIntegerSimulation {
 
 	public static void main(String[] args) {
 		
-			Scanner scanner = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 	        String result = null;
 
 	        String firstNum = scanner.nextLine();
