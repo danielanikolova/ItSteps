@@ -18,37 +18,26 @@ public class P02_RecursionPractic {
 		int firstNum = 10;
 		int lastNum = 10000;
 		
-		printNextIncreasing(firstNum, lastNum);
-		printNextDecreasing(lastNum, firstNum);
+		printNext(firstNum, lastNum);
 
 	}
 
 	
-	private static void printNextDecreasing(int firstNum, int lastNum) {
+	private static void printNext(int firstNum, int lastNum) {
+			
+			if (firstNum != lastNum) {
+				System.err.print(firstNum + " ");
+				printNext(firstNum * 10, lastNum);
+				
+			}else {
+				System.err.print(firstNum + " ");
+				System.err.print(firstNum + " ");
+				return;
+			}
+			
+			System.err.print(firstNum + " ");
 		
-		if (firstNum == lastNum) 
-		{
-			System.out.print(firstNum + " ");	
-			return;
-		}
-		
-		System.out.print(firstNum + " ");
-		printNextDecreasing(firstNum / 10, lastNum);
-		
-	}
-
-	private static void printNextIncreasing(int lastNum, int firstNum) 
-	{
-		
-		if (lastNum ==  firstNum) 
-		{
-			System.out.print(firstNum + " ");	
-			return;
-		}
-		
-		System.out.print(lastNum + " ");
-		printNextIncreasing(lastNum * 10, firstNum);
 		
 	}
-
+		
 }
