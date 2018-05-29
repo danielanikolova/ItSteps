@@ -20,8 +20,6 @@ public class Run {
 	
 	copyThread.start();
 	
-	copyThread.run();
-	
 	System.out.println("Press any key to stop ...");
 	Scanner scanner = new Scanner(System.in);
 	
