@@ -18,7 +18,7 @@ import javax.management.Query;
 
 public class Run {
 
-	private static final String sourceFile = "\\com.seeburger.simpleTasks\\FromDirectory";
+	private static final String sourceFile = "\\com.seeburger.simpleTasks\\FromDirectory\\";
 	
 	public static void main(String[] args) throws IOException {
 	
@@ -27,9 +27,9 @@ public class Run {
 		ExecutorService executorService = Executors.newFixedThreadPool(10);
 		
 		
-		BufferedReader br = new BufferedReader(new FileReader("\\com.seeburger.simpleTasks\\FromDirectory"));
+		BufferedReader br = new BufferedReader(new FileReader("\\com.seeburger.simpleTasks\\FromDirectory\\studentsInfo.txt"));
 		
-		 File directory = new File("\\com.seeburger.simpleTasks\\FromDirectory");
+		 File directory = new File("\\com.seeburger.simpleTasks\\FromDirectory\\studentsInfoCopy.txt");
 		 
 		 Queue<String> filePaths = new ArrayDeque<>();
 
@@ -51,7 +51,7 @@ public class Run {
 			
 		long endTime = System.currentTimeMillis();
 		System.out.println("Total time: " + (endTime - startTime));
-			
+
 //			 if (sourceFile.isDirectory())
 //			    {
 //			        for (File file : sourceFile.listFiles())

@@ -35,7 +35,7 @@ public class P02_RecursionPractic {
 				return;
 			}
 			
-			System.err.print(firstNum + " ");
+			System.out.println(firstNum + " ");
 		
 		
 	}
