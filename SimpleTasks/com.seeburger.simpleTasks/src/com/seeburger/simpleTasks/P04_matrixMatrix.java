@@ -39,28 +39,28 @@ public class P04_matrixMatrix {
 	        
 	        
 	        while (value <= n*n)
-	        {
+	        {	//fillDown
 	        	 for (int i = minRow; i <= maxRow; i++) 
 		            { 
 		                matrix[i][minCol] = value; 
 		                 
 		                value++; 
 		            } 
-	        	
+	        	//fillRight
 	        	 for (int i = minCol + 1; i <= maxCol; i++) 
 		            { 
 		                matrix[maxRow][i] = value; 
 		                 
 		                value++; 
 		            } 
-	        	
+	        	//fillUp
 	        	 for (int i = maxRow-1; i >= minRow; i--) 
 		            { 
 		                matrix[i][maxCol] = value; 
 		                 
 		                value++; 
 		            }
-	        	 
+	        	 //fillLeft
 	        	 for (int i = maxCol-1; i >= minCol + 1; i--) 
 		            { 
 		                matrix[minRow][i] = value; 
