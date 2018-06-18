@@ -22,15 +22,19 @@ public class CopyProcessor extends Thread {
 		try {
 		    copyManager.copyFiles();
 		    
+		} catch (FileLockedException e) {
+		    System.out.println(e.getMessage());
+		    return;
 		} catch (IOException e) {
 		    e.printStackTrace();
+		    return;
 		}
 		
-		try {
-		    copyManager.removeFiles();
-		} catch (IOException e) {		    
-		    e.printStackTrace();
-		}
+//		try {
+//		    copyManager.removeFiles();
+//		} catch (IOException e) {		    
+//		    e.printStackTrace();
+//		}
 	    }
 
 	    try {
