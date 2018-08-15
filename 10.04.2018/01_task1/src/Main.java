@@ -20,7 +20,21 @@ public static void main(String[] args) throws IOException {
 				arr[i] = 0;
 			}
 
+<<<<<<< HEAD
 		}
+=======
+		}
+
+		for (int i = arr.length - 1; i >= 0; i++) {
+			System.out.printf(arr[i] + " ");
+		}
+
+		for (int i = arr.length - 1; i >= 0; i++) {
+			System.out.printf(arr[i] + " ");
+		}
+
+		System.out.println("Here we are in daniela2");
+>>>>>>> daniela2
 
 		System.out.println("Here we are in daniela branch");
 	}
