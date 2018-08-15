@@ -26,7 +26,11 @@ public static void main(String[] args) throws IOException {
 			System.out.printf(arr[i] + " ");
 		}
 
+		for (int i = arr.length - 1; i >= 0; i++) {
+			System.out.printf(arr[i] + " ");
+		}
 
+		System.out.println("Here we are in daniela2");
 
 	}
 
