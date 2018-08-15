@@ -23,11 +23,19 @@ public static void main(String[] args) throws IOException {
 		}
 
 
+
 		for (int i = arr.length - 1; i >= 0; i++) {
 			System.out.printf(arr[i] + " ");
 		}
 
 	 System.out.println("my new branch - daniela3");
+
+		System.out.println("Here we are in daniela3 branch");
+		System.out.println("Here we are in daniela3 branch");
+		System.out.println("Here we are in daniela3 branch");
+		System.out.println("Here we are in daniela3 branch");
+
+
 	}
 
 }
